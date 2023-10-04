@@ -48,7 +48,6 @@ class Server:
             else:
                 await self.send_to_clients(f"{ws.name}: {message}")
 
-            
 
     async def ws_handler(self, ws: WebSocketServerProtocol):
         await self.register(ws)
@@ -68,6 +67,3 @@ async def main():
 
 if __name__ == '__main__':
     asyncio.run(main())
-    # args = '2 gbp'.split()
-    # result = exchange(*args)
-    # print(result)

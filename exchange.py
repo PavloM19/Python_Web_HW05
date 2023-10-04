@@ -2,8 +2,7 @@ import aiohttp
 import asyncio
 from datetime import datetime, timedelta
 import platform
-import sys
-from time import time
+
 
 def main(days = 1, *add_currency):
     BASE_URL = 'https://api.privatbank.ua/p24api/exchange_rates?date='
@@ -62,7 +61,6 @@ def main(days = 1, *add_currency):
         return out_list
         
 
-    start = time()
     currency_list = {'USD', 'EUR'}
     all_currency = ['AUD', 'AZN', 'BYN', 'CAD', 'CHF', 'CNY', 'CZK', 'DKK', 'EUR', 'GBP', 'GEL', 'HUF', 'ILS', 'JPY', 'KZT', 'MDL', 'NOK', 'PLN', 'SEK', 'SGD', 'TMT', 'TRY', 'UAH', 'USD', 'UZS', 'XAU']
 
@@ -84,12 +82,8 @@ def main(days = 1, *add_currency):
     if platform.system() == 'Windows':
         asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
     
-    out_data = asyncio.run(exchange_rates(days))
-    # print(out_data)
+    return exchange_rates(days) # asyncio.run(exchange_rates(days))
 
-    finish = time()
-    print('run time = ', finish - start)    
-    return out_data
 
 if __name__ == "__main__":
     out_data = main('2', 'USD', 'GBP', 'pln', 'zz')

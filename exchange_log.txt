@@ -2,3 +2,21 @@
 03.10.2023 21:21:01 - exchange 3 gbp ww
 03.10.2023 22:14:25 - exchange
 04.10.2023 13:37:04 - exchange
+04.10.2023 21:19:58 - exchange 3 gbp qq
+04.10.2023 21:21:13 - exchange 3 gbp qq
+04.10.2023 21:29:13 - exchange 3 gbp
+04.10.2023 21:45:45 - exchange 3 gbp 
+04.10.2023 22:06:09 - exchange 3 gbp
+04.10.2023 22:28:51 - exchange 3 gbp
+04.10.2023 22:36:45 - exchange 3 gbp
+04.10.2023 22:38:21 - exchange 3 gbp
+04.10.2023 22:39:54 - exchange
+04.10.2023 22:40:12 - exchange 5
+04.10.2023 22:41:10 - exchange 5
+04.10.2023 22:44:34 - exchange_rates(days) # 
+04.10.2023 22:46:50 - exchange
+04.10.2023 22:47:27 - exchange
+04.10.2023 22:49:57 - exchange
+04.10.2023 22:50:15 - exchange 3
+04.10.2023 22:55:44 - exchange 2
+04.10.2023 23:14:35 - exchange
